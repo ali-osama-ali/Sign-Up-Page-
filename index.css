@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    color: white;
+}
+
+h1 {
+    color: rgb(44, 199, 199);
+}
+
+h4 {
+    color: rgb(182, 182, 33);
+}
+
+.top-box p {
+    color: black;
+    font-weight: 600;
+    color: gray;
+}
+
+.container {
+    height: 50%;
+    width: 50%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    justify-content: center;
+}
+
+.top-box {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: white;
+    text-align: center ;
+}
+
+.box {
+    padding: 10px 50px;
+}
+
+
+
+.bottom-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-box {
+    width: 50%;
+    background-color: rgb(47, 175, 175);
+    text-align: center;
+}
+
+.right-box {
+    width: 50%;
+    background-color: rgb(44, 199, 199);
+}
+
+.price-sentence p:not(id="#price") {
+    font-weight: lighter;
+}
+
+#price {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.right-box p {
+    line-height: 10px;
+    font-weight: lighter;
+}
+
+button {
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    height: 50px;
+    border: 2px solid rgb(224, 224, 21);
+    margin : 20px 0px; 
+    background-color: rgb(224, 224, 21);
+    color: white;
+    font-weight: 900;
+}
+
+button:hover {
+    cursor: pointer;
+    border-radius: 2px solid rgb(224, 224, 21);
+    color: rgb(224, 224, 21);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+li{
+    list-style: none;
+    position: relative;
+    text-align: left;
+    left: -40px; 
+    color: rgba(255 ,255,255, 0.9);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1080px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .bottom-box
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .left-box,
+    .right-box 
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    li
+    {
+        text-align: center;
+        position: relative;
+        left: -25px;
+    }
+}
